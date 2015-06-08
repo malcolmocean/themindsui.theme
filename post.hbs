@@ -15,12 +15,12 @@
     <article class="{{post_class}}">
     {{! Everything inside the #post tags pulls data from the post }}
     {{#post}}
-        {{#contentFor "meta"}}
+        {{#contentFor "metaOff"}}
             <meta property="og:title" content="{{title}}" />
             <meta property="og:type" content="website" />
             <meta property="og:description" content="{{excerpt characters="220"}}..."/>
             <meta property="og:site_name" content="{{meta_title}}"/>
-            <meta property="og:url" content="http://mindingourway.com{{url}}"/>
+            <meta property="og:url" content="{{@blog.url}}/{{url}}"/>
 
             <meta name="twitter:card" content="summary"/>
             <meta name="twitter:title" content="{{title}}"/>

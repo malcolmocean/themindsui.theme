@@ -1,22 +1,22 @@
 {{!< default}}
 {{! The tag above means - insert everything in this file into the {body} of the default.hbs template }}
 
-{{#contentFor "meta"}}
-    <meta property="og:title" content="Minding our Way" />
+{{#contentFor "metaOff"}}
+    <meta property="og:title" content="The Mind's UI" />
     <meta property="og:type" content="website" />
-    <meta property="og:description" content="A blog by Nate Soares (So8res) about mindhacking, personal productivity, and other things." />
+    <meta property="og:description" content="A blog about metacognition, motivation, and mindfulness." />
     <meta property="og:site_name" content="{{meta_title}}"/>
-    <meta property="og:url" content="http://mindingourway.com"/>
+    <meta property="og:url" content="http://themindsui.com"/>
 
     <meta name="twitter:card" content="summary"/>
     <meta name="twitter:title" content="{{meta_title}}"/>
-    <meta name="twitter:description" content="A blog by Nate Soares (So8res) about mindhacking, personal productivity, and other things."/>
+    <meta name="twitter:description" content="A blog about metacognition, motivation, and mindfulness."/>
 {{/contentFor}}
 
 {{! The big featured header }}
 <header class="main-header {{#if @blog.cover}}" style="background-image: url({{@blog.cover}}){{else}}no-cover{{/if}}">
     <nav class="main-nav overlay clearfix">
-        <a class="about-button" href="/about">About</a>
+        <a class="about-button" href="/announcing-the-minds-ui">About</a>
         <a class="subscribe-button icon-feed" href="{{@blog.url}}/rss/">Subscribe</a>
     </nav>
     <div class="vertical">
